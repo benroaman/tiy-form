@@ -1,0 +1,15 @@
+label {
+  display: block;
+}
+
+fieldset {
+  margin: 1em;
+}
+
+.signup {
+  width: 20em;
+}
+
+.primary-label {
+  margin: .4em;
+}

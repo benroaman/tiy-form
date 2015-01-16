@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>tiy-form</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <form class="signup" action="blech.html" method="post">
+
+      <fieldset class="signup__personal">
+        <legend class="signup__personal__legend">Personal Info</legend>
+        <!--Full Name-->
+        <label class="primary-label">
+          Name: <input type="text" name="name" placeholder="Aaron A. Aaronson" required="required" class="signup__personal__name" />
+        </label>
+        <!--Male/Female Radio Buttons-->
+        <label class="primary-label">Sex:
+          <label>
+            <input type="radio" name="sex" title="male" value="male" class="signup__personal__sex" />
+            Male
+          </label>
+          <label>
+            <input type="radio" name="sex" title="female" value="female" class="signup__personal__sex" />
+            Female
+          </label>
+        </label>
+            <!--Occupation drop down-->
+        <label class="primary-label">
+          <select name="occupation" class="signup__personal__job-select">
+            <option value="select" class="signup__personal__job-option">Select Occupation</option>
+            <option value="hospitality" class="signup__personal__job-option">Hospitality</option>
+            <option value="it" class="signup__personal__job-option">Information Technology</option>
+            <option value="education" class="signup__personal__job-option">Education</option>
+            <option value="realestate" class="signup__personal__job-option">Real Estate</option>
+            <option value="other" class="signup__personal__job-option">Other</option>
+            <option value="unemployed" class="signup__personal__job-option">Unemployed</option>
+          </select>
+        </label>
+        <!--Brief Bio Text Area-->
+        <label class="primary-label">About you:<br />
+          <textarea name="userabout" class="signup__personal__about">I am from...</textarea>
+        </label>
+      </fieldset>
+
+      <fieldset class="signup__contact">
+        <legend class="signup__contact__legend">Contact Info</legend>
+        <!--Phone Number-->
+        <label class="primary-label">
+          Telephone: <input type="text" name="phone" placeholder="9191101986" class="signup__contact__phone" />
+        </label>
+        <!--Email-->
+        <label class="primary-label">
+          Email: <input type="email" name="email" placeholder="yourname@email.com" class="signup__contact__email" />
+        </label>
+        <!--Notification Preference: SMS/Email-->
+        <label class="primary-label">Notification Preference: <br />
+          <label>
+            <input type="checkbox" name="notification" value="sms" class="signup__contact__notification" />
+            SMS
+          </label>
+          <label>
+            <input type="checkbox" name="notification" value="email" class="signup__contact__notification" />
+            Email
+          </label>
+      </fieldset>
+
+      <fieldset class="signup__submit">
+      <!--Terms-->
+      <label class="primary-label">
+        <input type="checkbox" name="acceptterms" value="yes" required="required" class="signup__submit__terms"/>
+        I hereby forfeit my right to anything.
+      </label>
+      <!--Signup-->
+      <input type="submit" value="Submit" class="signup__submit__submitton"/>
+
+  </body>
+</html>
